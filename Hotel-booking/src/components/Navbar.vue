@@ -1,6 +1,15 @@
 <script>
-
-
+export default {
+    emits: ['go-home'],
+    data() {
+        return {}
+    },
+    methods: {
+        menu(page) {
+            this.$emit('go-home', page)
+        }
+    }
+}
 </script>
 <template>
 
@@ -10,9 +19,9 @@
             <a href="#"
                 class="group flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-lime-400 focus-visible:ring-offset-2 rounded-lg">
                 <img src="../assets/logo.png" alt="" class="h-[80px] w-[80px]">
-                
+
                 <span class="text-xl font-black uppercase tracking-tight text-stone-950">Jib&nbsp;<span
-                        class="text-lime-500">  </span>Hotel&nbsp;</span>
+                        class="text-lime-500"> </span>Hotel&nbsp;</span>
             </a>
 
             <ul class="hidden items-center gap-10 lg:flex">
@@ -35,14 +44,14 @@
                         SERVICES
                     </a>
                 </li>
-            
+
                 <li>
                     <a @click="menu('contact')" href="#"
                         class="text-sm font-bold uppercase tracking-[0.08em] text-stone-500 transition-colors duration-200 hover:text-stone-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-lime-400">
                         Contact
                     </a>
                 </li>
-             
+
             </ul>
 
             <div class="flex items-center gap-4">
@@ -58,7 +67,7 @@
                 </a>
 
 
-            
+
             </div>
         </nav>
     </header>
