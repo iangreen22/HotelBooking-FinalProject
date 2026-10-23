@@ -6,7 +6,7 @@
 
     <section class="w-full mx-auto py-10 bg-gray-50 dark:text-white mt-30">
         <!-- Title -->
-        <h1 class="text-center mb-4 text-3xl sm:text-3xl text-black font-bold">Our Services</h1>
+        <h1 class="text-center mb-4 text-3xl sm:text-3xl text-black font-bold">Services</h1>
 
         <div class="w-full h-full flex flex-col items-center md:py-4 py-10">
             <!-- Col - 2 -->
