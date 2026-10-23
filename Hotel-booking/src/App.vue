@@ -1,36 +1,16 @@
 <script>
-import HomeView from '../HomeView.vue';
-import Navbar from './components/Navbar.vue';
+import About from './components/About.vue';
 
-export default {
-  components: {
-     Navbar, HomeView
-  },
-  data() {
-    return {
-      
+export default{
+    components:{
+        About
     }
-  },
-  methods: {
-   
-  }
-}
-
-
-import RoomList from './components/RoomList.vue';
-
-export default {
-  components: {
-    RoomList,
-    Form,
-  }
 }
 </script>
 
-<template>
-  <HomeView/>
-  <Navbar/>
 
-  <RoomList />
-  <Form />
+
+<template>
+
+<About />
 </template>
