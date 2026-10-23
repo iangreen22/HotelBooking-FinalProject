@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.vue';
 import HomeView from './components/HomeView.vue';
 import About from './components/About.vue';
 import Contact from './components/Contact.vue';
+import Services from './components/Services.vue';
 import Footer from './components/Footer.vue';
 
 
@@ -19,6 +20,18 @@ export default {
   },
   methods: {
     showHome(i) {
+  
+  export default {
+    components: {
+    Navbar, HomeView, About, Contact, Footer, Services
+    },
+    data() {
+      return {
+         page: 'home',
+      }
+    },
+    methods: {
+     showHome(i) {
       this.page = i;
     },
 
@@ -28,10 +41,12 @@ export default {
 
 </script>
 
-<template>
-  <Navbar @go-home="showHome" />
-  <HomeView v-if="page === 'home'" />
-  <About v-if="page === 'about'" />
-  <Contact v-if="page === 'contact'" />
-  <Footer />
 </template>
+  <template>
+   <Navbar @go-home="showHome" />
+   <HomeView v-if="page === 'home'" />
+   <About v-if="page === 'about'" />
+   <Contact v-if="page === 'contact'" />
+   <Services v-if="page === 'services'"/>
+   <Footer />
+  </template>
