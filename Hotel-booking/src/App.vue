@@ -7,6 +7,19 @@ import Services from './components/Services.vue';
 import Footer from './components/Footer.vue';
 
 
+
+export default {
+  components: {
+    Navbar, HomeView, About, Contact, Footer,
+  },
+  data() {
+    return {
+      page: 'home',
+
+    }
+  },
+  methods: {
+    showHome(i) {
   
   export default {
     components: {
@@ -21,13 +34,14 @@ import Footer from './components/Footer.vue';
      showHome(i) {
       this.page = i;
     },
-     
-    }
 
   }
 
+}
+
 </script>
 
+</template>
   <template>
    <Navbar @go-home="showHome" />
    <HomeView v-if="page === 'home'" />
