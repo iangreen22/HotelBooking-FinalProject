@@ -1,9 +1,6 @@
 <script>
-
-
-
 </script>
 
 <template>
- 
+  
 </template>
