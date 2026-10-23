@@ -27,27 +27,27 @@ export default {
             <ul class="hidden items-center gap-10 lg:flex">
                 <li>
                     <a @click="menu('home')" href="#" aria-current="page"
-                        class="relative text-sm font-bold uppercase tracking-[0.08em] text-stone-950 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-lime-400">
+                        class="relative text-sm font-bold uppercase tracking-[0.08em] text-zinc-900 hover:text-zinc-700 hover:border-b-3 hover:border-lime-400 ">
                         HOME
-                        <span class="absolute -bottom-1.5 left-0 h-[3px] w-full rounded-full bg-lime-400"></span>
+                        
                     </a>
                 </li>
                 <li>
                     <a @click="menu('about')" href="#"
-                        class="text-sm font-bold uppercase tracking-[0.08em] text-stone-500 transition-colors duration-200 hover:text-stone-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-lime-400">
+                        class="relative text-sm font-bold uppercase tracking-[0.08em] text-zinc-900 hover:text-zinc-700 hover:border-b-3 hover:border-lime-400 ">
                         ABOUT
                     </a>
                 </li>
                 <li>
                     <a @click="menu('services')" href="#"
-                        class="text-sm font-bold uppercase tracking-[0.08em] text-stone-500 transition-colors duration-200 hover:text-stone-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-lime-400">
+                        class="relative text-sm font-bold uppercase tracking-[0.08em] text-zinc-900 hover:text-zinc-700 hover:border-b-3 hover:border-lime-400 ">
                         SERVICES
                     </a>
                 </li>
 
                 <li>
                     <a @click="menu('contact')" href="#"
-                        class="text-sm font-bold uppercase tracking-[0.08em] text-stone-500 transition-colors duration-200 hover:text-stone-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-lime-400">
+                        class="relative text-sm font-bold uppercase tracking-[0.08em] text-zinc-900 hover:text-zinc-700 hover:border-b-3 hover:border-lime-400 ">
                         Contact
                     </a>
                 </li>
