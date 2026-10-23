@@ -17,10 +17,20 @@ export default {
 }
 
 
+import RoomList from './components/RoomList.vue';
+
+export default {
+  components: {
+    RoomList,
+    Form,
+  }
+}
 </script>
 
 <template>
   <HomeView/>
   <Navbar/>
 
+  <RoomList />
+  <Form />
 </template>
